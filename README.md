@@ -1,5 +1,6 @@
 # iOS-emoji-from-server
 解决iOS从服务器返回的字符串中读取emoji表情符的问题
+（具体问题是，NSString中包含十六进制emoji字符串时，总是无法用其它第三方库解码，显不不了emoji表情！）
 
 使用方式：
 NSString *sEmoji = [Stringemoji emojiWithUnicodeNumWithNum: [self numberWithHexString: hexString]];
